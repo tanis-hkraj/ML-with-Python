@@ -28,3 +28,15 @@ print(n)
 # 3. Max Norm
 n=np.linalg.norm(arr,np.inf)
 print(n)
+
+
+#distance between two vectors
+x,y=np.array([[2],[0]]),np.array([[0],[2]])
+distance=np.linalg.norm(x-y,2)
+
+#Angle between two vectors
+cos_theta=(x.T@y)/((np.linalg.norm(x,2))*np.linalg.norm(y,2))
+print(cos_theta)
+angle=np.arccos(cos_theta)
+degree=angle*(180/np.pi)
+print(degree)
