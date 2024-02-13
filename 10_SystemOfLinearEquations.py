@@ -63,10 +63,22 @@ print("------------------------")
 # Rules:
 #     1. Addition and Subtraction of Two equation.
 #     2. Multiplication of an equation by a number.
-
+# x+3y+5z=-1
+# 2x+2y-z=1
+# x+3y+2z=2
+# R[x,y,z]=S
 R=np.array([[1,3,5],[2,2,-1],[1,3,2]])
 S=np.array([[-1],[1],[2]])
 t=np.linalg.solve(R,S)
 print(t)
+print("------------------------")
+# A set of n linearly independent column vectors with n elements forms a basis
+
+# Eigen Values & Eigen Vector
+a=np.array([[4,2],[1,3]])
+w,v=np.linalg.eig(a)
+print("E value: ",w)# w stores Eigen Values
+print("E vector: ",v)# v stores Eigen Vector5
+
 
     
