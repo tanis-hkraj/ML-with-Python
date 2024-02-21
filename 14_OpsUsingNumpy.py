@@ -51,4 +51,27 @@ print(n_2d[0])
 print(n_2d[1])
 print(n_2d[1][3])
 print(n_2d[:,1])
-print(n_2d[:,1:3])
+print(n_2d[:,1:3]) # nd_array[rows,column]
+
+
+# Access elements: Iteration 
+print("Array using iteration:")
+print(n_2d.size)
+for i in n_2d:
+    print(i)
+
+n_2d_rows=n_2d.ndim 
+print(n_2d_rows)
+n_2d_columns=n_2d[0].size
+print(n_2d_columns)
+for i in range(2):
+    for j in n_2d[i]:
+        print(j,end=" ")
+print("\n")
+
+#indexing with boolean Arrays
+test_scores=np.array([[83,71,57,63],[54,68,81,45]])
+pass_score=test_scores>60
+print("Boolean Array:-\n",pass_score)
+passed_Students_score=test_scores[pass_score]
+print("Passed Student Scores:-\n",passed_Students_score)
