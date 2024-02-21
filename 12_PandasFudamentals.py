@@ -35,5 +35,14 @@ print(d.shape)
    EDA: Graphical technique-> Histograms and Scatter Plotts are most used techniques
    
 6. Conclusions and Predictions: Reaching a conclusion and making predictions based on data Analysis.
+7 . Communications
+
+# Types of Plots:
+1. Histograms
+2. Heat Map
+3. Line Chart
+4. Regression Plot
+5. Cluster Map
+
 
 '''
