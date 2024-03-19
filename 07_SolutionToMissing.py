@@ -34,10 +34,11 @@ df1=pd.DataFrame(imputed_data,index=["0","1","2","3","4"],columns=["a","b","c","
 print(df1)
 print("-----------------------------------")
 # Solution 4: Fill-up the values with the mean of the data
-df=df.fillna(df.mean())
-print(df)
+df2=df.fillna(df.mean())
+print(df2)
 print("-----------------------------------")
 # Solution 5: Fill-up the values with median.
-df=df.fillna(df.median())
-print(df)
+df3=df.fillna(df.median())
+print(df3)
 print("-----------------------------------")
+
