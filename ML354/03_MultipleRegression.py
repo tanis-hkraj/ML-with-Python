@@ -7,8 +7,10 @@ df=pd.read_csv('https://raw.githubusercontent.com/rasbt/'
               'python-machine-learning-book-2nd-edition'
               '/master/code/ch10/housing.data.txt',
               sep='\s+')
+
 df.columns=['CRIM','ZN','INDUS','CHAS','NOX','RM','AGE','DIS',
             'RAD','TAX','PTRATIO','B','LSTAT','MEDV']
+print(df)
 from sklearn.model_selection import train_test_split
 X=df.iloc[:,:-1].values #except the last attribute/col/explanatory variable
 Y=df['MEDV'].values #only one col/response variable
